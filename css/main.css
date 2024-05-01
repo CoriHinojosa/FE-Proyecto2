@@ -1,0 +1,237 @@
+@charset "UTF-8";
+html {
+  background-color: #252525;
+}
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #252525;
+}
+body div {
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin: 20px;
+}
+body div header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px 0px 15px;
+  background-color: rgb(234, 185, 178);
+  border-radius: 20px 20px 0px 0px;
+  border-bottom: solid;
+}
+body div header .iconLogo {
+  width: 100px;
+}
+body div header .menuLogo {
+  height: 60px;
+}
+body div main img {
+  width: 36em;
+}
+body div main .imgPoster {
+  margin-top: 120px;
+  width: 38em;
+}
+body div main .imgChara {
+  width: 13em;
+  padding: 15px 15px 0px 15px;
+}
+body div main h2 {
+  text-align: center;
+}
+body div main h3 {
+  text-align: center;
+  padding: 10px;
+}
+body div main h3 a:link {
+  text-decoration: none;
+}
+body div main h3 a:visited {
+  text-decoration: none;
+}
+body div main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body div main section .crunchyAd {
+  margin: 200px 0px;
+}
+body div main section .charaStyle p {
+  text-align: center;
+}
+body div main section .formStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: rgb(225, 225, 225);
+}
+body div main section .formStyle select, body div main section .formStyle option {
+  width: 300px;
+  height: 40px;
+  font-size: 1rem;
+  text-align: center;
+}
+body div main section .formStyle input[type=number] {
+  width: 290px;
+  height: 35px;
+  font-size: 1rem;
+  text-align: center;
+}
+body div main section .formStyle label {
+  font-weight: bold;
+}
+body div main section .formStyle input[type=text] {
+  width: 400px;
+  padding: 7px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+body div main section p {
+  margin-bottom: 30px;
+}
+body div main section a:link {
+  text-decoration: none;
+}
+body div main section a:visited {
+  text-decoration: none;
+}
+body div footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 78em) {
+  .grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "left" "right";
+  }
+  body div main .imgPoster {
+    margin-top: 50px;
+    width: 25em;
+    margin-left: 10px;
+  }
+  body div main img {
+    width: 30em;
+    margin-left: 50px;
+  }
+  body div main .imgChara {
+    width: 20em;
+    margin: 0;
+  }
+  body div main h3 {
+    width: 93%;
+    font-size: 1.3rem;
+  }
+  body div main p {
+    padding: 10px;
+  }
+  body div main .leftMenu {
+    width: 40%;
+  }
+  body div main .leftMenu button {
+    width: 50px;
+    height: 50px;
+    margin-left: 280px;
+  }
+  body div main section .imgCrunchy {
+    width: 30em;
+    margin: 0px 0px 20px 0px;
+  }
+  body div main section form {
+    margin-bottom: -50px;
+  }
+  footer {
+    padding: 10px;
+    text-align: center;
+  }
+}
+/*botones, barras de navegación, tarjetas, etc...*/
+body div main .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+body div main .modal-content {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 15px;
+  border: none;
+  width: 44.5%;
+}
+body div main .close {
+  color: #252525;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+body div main .close:hover,
+body div main .close:focus {
+  color: #bdbdbd;
+  text-decoration: none;
+  cursor: pointer;
+}
+body div main .leftMenu {
+  width: 15%;
+  height: 60%;
+  position: absolute;
+  left: -50%;
+  top: 10px;
+  background-color: rgb(225, 225, 225);
+  padding: 20px;
+  box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.29);
+  transition: all 0.25s ease;
+  border-radius: 0px 15px 15px 0px;
+  border: solid;
+}
+body div main .leftMenu.showMenu {
+  left: 0%;
+}
+body div main .leftMenu button {
+  margin-left: 12em;
+  width: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+body div main .leftMenu .menuTitle {
+  text-align: center;
+}
+body div main section .btnSend {
+  width: 150px;
+  height: 30px;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+body div main section .btnSend:hover {
+  outline: none;
+  background-color: rgb(234, 185, 178);
+  border: 3px solid rgb(234, 185, 178);
+}/*# sourceMappingURL=main.css.map */

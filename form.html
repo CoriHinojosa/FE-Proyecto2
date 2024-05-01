@@ -1,0 +1,71 @@
+<!--Alejandra Hinojosa . Modulo 21 - Proyecto #2-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encuentra infomación y ofertas sobre la serie de anime: Fate Zero">
+    <meta property="og:title" content="Fate Zero - Website">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="Encuentra descuentos e información sobre la serie de anime: Fate Zero">
+    <meta property="og:url" content="www.fatezeroanimesite.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="script/functions.js" defer></script>
+    <title>Fate/Zero - Registro</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <nav>
+                <img src="img/menu.png" class="menuLogo" alt="Logo del menu" role="menu">
+                <h1>FATE/ZERO</h1>
+                <a href="index.html"><img src="img/logo.png" class="iconLogo" alt="Logo de la serie"></a>
+            </nav>                
+        </header>
+        
+        <main class="grid-container">
+            <section class="leftMenu">
+                <button aria-label="Cerrar">X</button>
+                <h2 class="menuTitle">・MENU・</h2>
+                <h3 class="hover"><a href="index.html">INICIO</a></h3>
+                <h3 class="hover"><a href="characters.html">PERSONAJES</a></h3>
+                <h3 class="hover"><a href="form.html">REGISTRO</a></h3>        
+                <h3 class="hover"><a href="form.html">PROMOCIONES</a></h3>
+            </section>
+
+            <section class="left">
+                <h1>・REGISTRO・</h1>
+                <p>! Regístrate aquí y obtén 20% de descuento para la plataforma de stream Crunchyroll !</p>
+                    <form class="formStyle">
+                        <label lang="en" for="fname">Name:</label>
+                        <input type="text" id="fname" name="fname" class="formText">
+                        <label lang="en" for="lname">Email:</label>
+                        <input type="text" id="lname" name="lname" class="formText">                        
+                        <label for="cars">¿Dónde nos encontraste?</label>
+                        <select name="where" id="where" class="formText">
+                        <option value="instagram">Instagram</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="otros">Otros</option>
+                        </select>
+                        <label for="time">¿Cuántos años llevas viendo anime?</label>
+                        <input type="number" id="time" name="time" required placeholder="Elige los años" class="formText">
+                        <button aria-label="Enviar información" class="btnSend">Enviar</button>
+                    </form>  
+                </section> 
+
+                <section class="right">
+                    <a href="https://www.crunchyroll.com/es" class="crunchyAd hover" target="_blank" rel="sponsored"><img src="img/crunchyroll.jpg" class="imgCrunchy" alt="promocion de crunchyroll"></a>
+                </section>
+        </main>
+
+        <footer>            
+            <small>(Este es un proyecto para un curso, las imágenes usadas corresponden a sus respectivos autores y el descuento NO es real)</small>  
+        </footer>
+    </div>
+</body>
+</html>
